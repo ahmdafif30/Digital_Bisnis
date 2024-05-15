@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  color: #000;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  min-height: 10000px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #2eb6dc;
+  color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+.navbar.transparent {
+  background-color: transparent; /* Warna navbar setelah di-scroll */
+}
+.navbar .logo {
+  align-items: center;
+  display: flex;
+}
+.navbar .logo img {
+  width: 50px;
+  height: 25px;
+}
+.navbar .logo a {
+  padding: 0 10px;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+}
+.navbar .logo span {
+  color: #0984ff;
+  font-style: normal;
+}
+.navbar .nav {
+  margin: 0 10px;
+  font-size: 18px;
+}
+.navbar .nav a {
+  padding: 0 15px;
+  display: inline-block;
+}
+.navbar .nav a:hover {
+  color: #6e5512;
+}
+.navbar .nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #ffc831;
+  transform: scaleX(0);
+  transition: 0.1s;
+}
+.navbar .nav a:hover::after {
+  transform: scaleX(1);
+}
+.navbar .profil {
+  display: flex;
+  align-items: center;
+} 
+.navbar .profil button {
+  background-color: #066bcf;
+  margin: 0 20px;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  color: #fff;
+}
+.navbar .profil button:hover {
+  background-color: #ffc831;
+  color: #000;
+  cursor: pointer;
+}
+.navbar .profil img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+
+/* Landing Page */
+.row1 {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  color: #000;
+}
+.row1 .col1 {
+  font-family: "Mulish", sans-serif;
+  padding: 100px;
+}
+.row1 .col1 h1 {
+  color: #000;
+  font-size: 70px;
+}
+.row1 .col1 p {
+  margin: 20px 0;
+  color: #000;
+  font-size: 13px;
+}
+.row1 .col1 .button {
+  margin-top: 50px;
+}
+.row1 .col1 .button .btn1 {
+  /* margin-top: 10px; */
+  /* margin: 10px 10px; */
+  font-size: 15px;
+  padding: 15px 20px;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #0984ff;
+}
+.row1 .col1 .button .btn1:hover {
+  background-color: #459df6;
+}
+.row1 .col1 .button .btn2:hover {
+  background-color: #eeeeee;
+  /* color: #fff; */
+}
+.row1 .col1 .button .btn2 {
+  /* margin-top: 10px; */
+  margin: 10px 5px;
+  font-size: 15px;
+  padding: 15px 20px;
+  color: #0984ff;
+  border-radius: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 0.5px solid #0984ff;
+}
+.row1 img {
+  width: 50%;
+}
+.row1 .col1 .user {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-family: 'Mulish', sans-serif;
+}
+.row1 .col1 .user img{
+  width: 100px;
+  height: 40px;
+}
+.row1 .col1 .user p{
+  margin: 0 10px;
+}
+
+
+/* client */
+.row2 {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+
+/* Service */
+.row3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  font-family: 'Mulish', sans-serif;
+}
+
+.row3 span {
+  color: #5956E9;
+}
+
+.row3 .pembungkus-card {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px 0;
+}
+.row3 .pembungkus-card .card {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Mulish', sans-serif;
+  margin: 0 25px;
+  padding: 40px 10px;
+  width: 300px;
+  height: 300px;
+  border-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #444343;
+  overflow: hidden;
+}
+.row3 .pembungkus-card .card .isi-card {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+.row3 .pembungkus-card .card p {
+  font-size: 16px;
+}
